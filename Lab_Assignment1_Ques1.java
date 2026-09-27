@@ -1,6 +1,9 @@
+import java.util.Scanner;
 public class Lab_Assignment1_Ques1{
   public static void main (String[] args){
-   int time_min = 3456789; //Given time in minutes
+   Scanner sc = new Scanner(System.in);
+   System.out.print("Enter the minutes: ");
+   int time_min = sc.nextInt(); //Given time in minutes
    int day_to_min = 24*60; // 1 day = 1440 min
    int time_day = time_min/day_to_min;//Converting all min to days
    int time_year = time_day/365; //Converting all days to years
